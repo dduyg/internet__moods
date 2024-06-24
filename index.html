@@ -6,50 +6,44 @@
     <title>Liminal Loop</title>
     <style>
         body {
-            background-color: #0d0c15;
-            color: #ffccff;
+            background-color: #0f0f2c;
+            color: #f0f0f0;
             font-family: 'Arial', sans-serif;
-            text-align: center;
-            padding: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
             margin: 0;
         }
+        .container {
+            text-align: center;
+        }
         h1 {
-            font-size: 4em;
-            margin-bottom: 20px;
+            font-size: 5rem;
+            margin-bottom: 10px;
         }
         p {
-            font-size: 1.5em;
+            font-size: 1.5rem;
         }
         .glitch {
-            font-size: 1.2em;
-            position: relative;
-            animation: glitch-animation 2s infinite linear alternate-reverse;
+            color: #ff00ff;
+            text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff;
         }
-        @keyframes glitch-animation {
-            0% {
-                transform: translate(0);
-            }
-            25% {
-                transform: translate(2px, -3px);
-            }
-            50% {
-                transform: translate(-3px, 2px);
-            }
-            75% {
-                transform: translate(3px, 0);
-            }
-            100% {
-                transform: translate(0);
-            }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <div>
-        <h1>404 Error</h1>
-        <p class="glitch">Uh-oh! It looks like you've wandered into the digital abyss.</p>
-        <p>Don't worry, even digital spaces have their hiccups. Let's get you back to the main dimension.</p>
-        <p><a href="/" style="color: #ffccff; text-decoration: none;">Return to Liminal Loop</a></p>
+    <div class="container">
+        <div>
+            <h1 class="glitch">404 Not Found</h1>
+            <p>Oops! Looks like you're lost in the Liminal Loop.</p>
+            <p>Don't worry, we'll help you find your way back to reality.</p>
+            <img src="https://placekitten.com/400/300" alt="Lost Cat">
+        </div>
     </div>
 </body>
 </html>
