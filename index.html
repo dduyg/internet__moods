@@ -6,37 +6,50 @@
     <title>Liminal Loop</title>
     <style>
         body {
-            background-color: #0e0e0e;
-            color: #fff;
+            background-color: #0d0c15;
+            color: #ffccff;
             font-family: 'Arial', sans-serif;
             text-align: center;
             padding: 50px;
+            margin: 0;
         }
         h1 {
-            font-size: 6em;
-            margin-bottom: 0;
-            font-family: 'Impact', sans-serif;
-            color: #ff6ac1;
+            font-size: 4em;
+            margin-bottom: 20px;
         }
         p {
             font-size: 1.5em;
-            margin-top: 10px;
         }
         .glitch {
-            color: #00ffcb;
             font-size: 1.2em;
-            font-weight: bold;
-            text-transform: uppercase;
+            position: relative;
+            animation: glitch-animation 2s infinite linear alternate-reverse;
+        }
+        @keyframes glitch-animation {
+            0% {
+                transform: translate(0);
+            }
+            25% {
+                transform: translate(2px, -3px);
+            }
+            50% {
+                transform: translate(-3px, 2px);
+            }
+            75% {
+                transform: translate(3px, 0);
+            }
+            100% {
+                transform: translate(0);
+            }
         }
     </style>
 </head>
 <body>
     <div>
-        <h1>404</h1>
-        <p>Oops! Nothing to see here.</p>
-        <p class="glitch">404 ERROR: Reality not found</p>
-        <p>Maybe we're caught in a digital haze.</p>
-        <p>Let's get back to <a href="/" style="color: #ff6ac1; text-decoration: none;">Liminal Loop</a>.</p>
+        <h1>404 Error</h1>
+        <p class="glitch">Uh-oh! It looks like you've wandered into the digital abyss.</p>
+        <p>Don't worry, even digital spaces have their hiccups. Let's get you back to the main dimension.</p>
+        <p><a href="/" style="color: #ffccff; text-decoration: none;">Return to Liminal Loop</a></p>
     </div>
 </body>
 </html>
