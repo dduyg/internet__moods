@@ -6,48 +6,39 @@
     <title>Liminal Loop</title>
     <style>
         body {
-            background-color: #0f0f15;
-            color: #f0f0f5;
-            font-family: 'Arial', sans-serif;
+            background-color: #0e0e23;
+            color: #b2b2ff;
+            font-family: 'Roboto', sans-serif;
             text-align: center;
             padding: 50px;
+            margin: 0;
         }
         h1 {
-            font-size: 4em;
-            margin-bottom: 20px;
+            font-size: 6em;
+            margin-bottom: 10px;
         }
         p {
             font-size: 1.5em;
+            margin-top: 10px;
         }
         .glitch {
-            font-size: 1.2em;
-            color: #ff00e5;
-            animation: glitch 1s infinite linear alternate-reverse;
+            color: #ff80bf;
+            text-shadow: 0 0 5px #ff80bf, 0 0 10px #b2b2ff, 0 0 15px #ff80bf, 0 0 20px #b2b2ff, 0 0 25px #ff80bf;
         }
-        @keyframes glitch {
-            0% {
-                text-shadow: -1px -1px 0 #ff00e5, 1px 1px 0 #00ffec;
-            }
-            25% {
-                text-shadow: -1px 1px 0 #ff00e5, 1px -1px 0 #00ffec;
-            }
-            50% {
-                text-shadow: 1px -1px 0 #ff00e5, -1px 1px 0 #00ffec;
-            }
-            75% {
-                text-shadow: 1px 1px 0 #ff00e5, -1px -1px 0 #00ffec;
-            }
-            100% {
-                text-shadow: -1px -1px 0 #ff00e5, 1px 1px 0 #00ffec;
-            }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 30px;
         }
     </style>
 </head>
 <body>
-    <h1>404</h1>
-    <p class="glitch">Error: File Not Found in the Liminal Loop</p>
-    <p>Uh-oh! Looks like you've ventured into a glitched dimension.</p>
-    <p>Don't worry, though. Our technicians are looking into it.</p>
-    <p>Meanwhile, you can <a href="/">return to safety</a> or <a href="javascript:history.back()">try something else</a>.</p>
+    <div>
+        <h1 class="glitch">404</h1>
+        <p>Oops! Looks like you're lost in the digital void.</p>
+        <p>But hey, why not take a moment to contemplate the <span class="glitch">liminal</span> <span class="glitch">loop</span> you've stumbled into?</p>
+        <p>Meanwhile, here's a <a href="/">shortcut back to reality</a>.</p>
+        <img src="https://via.placeholder.com/600x400.png?text=Lost+in+the+Glitch" alt="Glitch Image">
+    </div>
 </body>
 </html>
