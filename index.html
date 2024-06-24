@@ -6,43 +6,110 @@
     <title>Liminal Loop</title>
     <style>
         body {
-            background-color: #2a004f;
-            color: #fff;
+            background-color: #4a148c;
+            color: #ffffff;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             text-align: center;
-            padding: 50px;
-        }
-        h1 {
-            font-size: 3em;
-            margin-bottom: 20px;
-            font-weight: bold;
-            letter-spacing: 2px;
-        }
-        p {
-            font-size: 1.2em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
         }
         .glitch {
-            color: #ff00ff;
-            font-size: 1.5em;
+            font-size: 6em;
             font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            color: #ff4081;
+            position: relative;
+            animation: glitch 1s linear infinite;
         }
-        img {
-            max-width: 100%;
-            height: auto;
-            margin-top: 20px;
+        .glitch::before,
+        .glitch::after {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .glitch::before {
+            left: 2px;
+            text-shadow: -2px 0 #00ffea;
+            background: #4a148c;
+            z-index: -1;
+            animation: noise-1 3s linear infinite alternate-reverse;
+        }
+        .glitch::after {
+            left: -2px;
+            text-shadow: -2px 0 #ff4081;
+            background: #4a148c;
+            z-index: -2;
+            animation: noise-2 2s linear infinite alternate-reverse;
+        }
+        @keyframes glitch {
+            2%, 64% {
+                transform: translate(2px, 0) skew(0deg);
+            }
+            4%, 60% {
+                transform: translate(-2px, 0) skew(0deg);
+            }
+            62% {
+                transform: translate(0, 0) skew(5deg);
+            }
+        }
+        @keyframes noise-1 {
+            0%, 100% {
+                clip-path: inset(0 50% 0 0);
+            }
+            5% {
+                clip-path: inset(69% 0 54% 0);
+            }
+            10% {
+                clip-path: inset(0 23% 0 0);
+            }
+            15% {
+                clip-path: inset(49% 0 33% 0);
+            }
+            20% {
+                clip-path: inset(0 72% 0 0);
+            }
+            25% {
+                clip-path: inset(20% 0 24% 0);
+            }
+            30% {
+                clip-path: inset(0 85% 0 0);
+            }
+        }
+        @keyframes noise-2 {
+            0%, 100% {
+                clip-path: inset(0 51% 0 0);
+            }
+            5% {
+                clip-path: inset(16% 0 25% 0);
+            }
+            10% {
+                clip-path: inset(0 30% 0 0);
+            }
+            15% {
+                clip-path: inset(68% 0 30% 0);
+            }
+            20% {
+                clip-path: inset(0 80% 0 0);
+            }
+            25% {
+                clip-path: inset(13% 0 72% 0);
+            }
+            30% {
+                clip-path: inset(0 25% 0 0);
+            }
         }
     </style>
 </head>
 <body>
-    <h1>404 - Page Not Found</h1>
-    <p class="glitch">Error: 0x4 - Reality not found.</p>
-    <p>Sorry, the page you are looking for seems to have slipped into the vaporwave void.</p>
-    <p>Maybe try some of these instead:</p>
-    <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About Us</a></li>
-        <li><a href="/contact">Contact</a></li>
-    </ul>
-    <img src="https://via.placeholder.com/600x400?text=Vaporwave+Art" alt="Vaporwave Art">
+    <div class="glitch" data-text="404 Error">404 Error</div>
+    <p>Sorry, the quantum flux capacitor is out of sync.</p>
+    <p><a href="/">Return to Liminal Loop</a></p>
 </body>
 </html>
