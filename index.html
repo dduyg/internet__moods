@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liminal Loop</title>
+    <style>
+        body {
+            background-color: #0F0E17;
+            color: #A7A9BE;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        h1 {
+            font-size: 5em;
+            color: #FF6F91;
+            animation: glitch 1s infinite;
+        }
+        @keyframes glitch {
+            0% { text-shadow: 2px 2px #0CFCFF, -2px -2px #FF6F91; }
+            25% { text-shadow: -2px -2px #0CFCFF, 2px 2px #FF6F91; }
+            50% { text-shadow: 2px -2px #0CFCFF, -2px 2px #FF6F91; }
+            75% { text-shadow: -2px 2px #0CFCFF, 2px -2px #FF6F91; }
+            100% { text-shadow: 2px 2px #0CFCFF, -2px -2px #FF6F91; }
+        }
+        p {
+            font-size: 1.5em;
+            margin: 20px 0;
+        }
+        .search-container {
+            margin-top: 20px;
+        }
+        .search-container input[type="text"] {
+            padding: 10px;
+            font-size: 1em;
+            border: 2px solid #A7A9BE;
+            border-radius: 5px;
+            width: 300px;
+            background-color: #0F0E17;
+            color: #A7A9BE;
+        }
+        .search-container input[type="submit"] {
+            padding: 10px 20px;
+            font-size: 1em;
+            border: 2px solid #A7A9BE;
+            border-radius: 5px;
+            background-color: #A7A9BE;
+            color: #0F0E17;
+            cursor: pointer;
+        }
+        .search-container input[type="submit"]:hover {
+            background-color: #FF6F91;
+            color: #0F0E17;
+        }
+        a {
+            color: #0CFCFF;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>404</h1>
+    <p>Oops! The page you're looking for does not exist.</p>
+    <p>Return to the <a href="/">homepage</a> or try searching for what you need:</p>
+    <div class="search-container">
+        <form action="/search" method="get">
+            <input type="text" name="q" placeholder="Search...">
+            <input type="submit" value="Search">
+        </form>
+    </div>
+</body>
+</html>
