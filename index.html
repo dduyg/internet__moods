@@ -6,85 +6,47 @@
     <title>Liminal Loop</title>
     <style>
         body {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
             margin: 0;
             padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background: linear-gradient(135deg, #1e1e1e, #2c2c2c);
-            font-family: 'Courier New', Courier, monospace;
-            color: #ffffff;
-            text-align: center;
-            overflow: hidden;
         }
         .container {
-            position: relative;
-            z-index: 1;
+            max-width: 600px;
+            padding: 20px;
         }
         h1 {
-            font-size: 5em;
-            color: #ff00ff;
-            text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
+            font-size: 3em;
+            margin-bottom: 20px;
+            font-family: 'Roboto', sans-serif;
         }
         p {
-            font-size: 1.5em;
-            margin: 20px 0;
-            color: #00ffff;
-            text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff;
+            font-size: 1.2em;
+            margin-bottom: 20px;
         }
         a {
-            color: #00ffff;
+            color: #ff00ff;
             text-decoration: none;
-            font-size: 1.2em;
-            text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff;
+            font-weight: bold;
         }
         a:hover {
-            color: #ff00ff;
-            text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff;
-        }
-        .glitch {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: #ff00ff;
-            font-size: 5em;
-            animation: glitch 1s infinite;
-        }
-        @keyframes glitch {
-            0% {
-                text-shadow: 2px 2px 0 #ff00ff, -2px -2px 0 #00ffff;
-                transform: translate(0);
-            }
-            20% {
-                text-shadow: -2px -2px 0 #ff00ff, 2px 2px 0 #00ffff;
-                transform: translate(-3px, 3px);
-            }
-            40% {
-                text-shadow: -2px 2px 0 #ff00ff, 2px -2px 0 #00ffff;
-                transform: translate(3px, -3px);
-            }
-            60% {
-                text-shadow: 2px -2px 0 #ff00ff, -2px 2px 0 #00ffff;
-                transform: translate(-3px, 3px);
-            }
-            80% {
-                text-shadow: -2px -2px 0 #ff00ff, 2px 2px 0 #00ffff;
-                transform: translate(3px, -3px);
-            }
-            100% {
-                text-shadow: 2px 2px 0 #ff00ff, -2px -2px 0 #00ffff;
-                transform: translate(0);
-            }
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>404</h1>
-        <p class="glitch">Oops! The page you're looking for got lost in the Liminal Loop.</p>
-        <p>Try going back to the <a href="/">homepage</a> or <a href="javascript:history.back()">previous page</a>.</p>
+        <h1>404 Not Found</h1>
+        <p>Oops! It seems you've ventured into the digital void.</p>
+        <p>But don't worry, you can <a href="/">return to safety</a> or explore the <a href="/archive">timeless archives</a>.</p>
+        <p>Meanwhile, enjoy the glitchy vibes of the vaporwave dimension.</p>
+        <p>Remember, even in error, the loop continues...</p>
     </div>
 </body>
 </html>
