@@ -6,96 +6,37 @@
     <title>Liminal Loop</title>
     <style>
         body {
-            background-color: #2c2f33;
-            color: #fff;
-            font-family: 'Arial', sans-serif;
+            background-color: #0f0c29; /* Dark purple */
+            color: #e4e4e4; /* Light gray */
+            font-family: 'Roboto', sans-serif;
             text-align: center;
             padding: 50px;
             margin: 0;
         }
         h1 {
-            font-size: 4em;
+            font-size: 5em;
             margin-bottom: 20px;
+            color: #23d5ab; /* Teal */
         }
         p {
             font-size: 1.5em;
+            margin-bottom: 30px;
         }
-        .glitch {
-            position: relative;
-            display: inline-block;
+        a {
+            color: #f0e68c; /* Khaki */
+            text-decoration: none;
+            transition: color 0.3s;
         }
-        .glitch::before, .glitch::after {
-            content: attr(data-text);
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-        .glitch::before {
-            left: 2px;
-            text-shadow: -2px 0 #00ff99;
-            clip: rect(44px, 450px, 56px, 0);
-            animation: glitch-anim 2s infinite linear alternate-reverse;
-        }
-        .glitch::after {
-            left: -2px;
-            text-shadow: -2px 0 #ff00ff;
-            clip: rect(24px, 450px, 44px, 0);
-            animation: glitch-anim 3s infinite linear alternate-reverse;
-        }
-        @keyframes glitch-anim {
-            0% {
-                clip: rect(34px, 9999px, 56px, 0);
-            }
-            10%, 18%, 24%, 28%, 88% {
-                transform: skew(0.05deg);
-                clip: rect(24px, 9999px, 54px, 0);
-            }
-            16%, 20%, 92% {
-                transform: skew(0.2deg);
-                clip: rect(43px, 9999px, 26px, 0);
-            }
-            22%, 26%, 30%, 86% {
-                transform: skew(0.3deg);
-                clip: rect(18px, 9999px, 6px, 0);
-            }
-            32%, 34%, 36%, 84% {
-                transform: skew(0.4deg);
-                clip: rect(21px, 9999px, 42px, 0);
-            }
-            38%, 40%, 82% {
-                transform: skew(0.3deg);
-                clip: rect(12px, 9999px, 28px, 0);
-            }
-            44%, 46%, 48%, 78% {
-                transform: skew(0.2deg);
-                clip: rect(38px, 9999px, 9px, 0);
-            }
-            52%, 54%, 76% {
-                transform: skew(0.1deg);
-                clip: rect(21px, 9999px, 47px, 0);
-            }
-            58%, 60%, 72% {
-                transform: skew(0.4deg);
-                clip: rect(22px, 9999px, 39px, 0);
-            }
-            66%, 68% {
-                transform: skew(0.3deg);
-                clip: rect(29px, 9999px, 4px, 0);
-            }
-            70%, 74% {
-                transform: skew(0.2deg);
-                clip: rect(15px, 9999px, 50px, 0);
-            }
+        a:hover {
+            color: #ffd700; /* Gold */
         }
     </style>
 </head>
 <body>
-    <div>
-        <h1 class="glitch" data-text="404">404</h1>
-        <p>Oops! Looks like you're lost in the Liminal Loop.</p>
-        <p>Maybe you can find your way back <a href="/">home</a> or <a href="mailto:contact@liminalloop.com">contact us</a>.</p>
-    </div>
+    <h1>404</h1>
+    <p>Oops! Looks like you're lost in the digital void.</p>
+    <p>But hey, don't worry, let's groove back to <a href="/">Liminal Loop's homepage</a>.</p>
+    <p>Meanwhile, enjoy the glitchy vibes of the vaporwave universe.</p>
+    <img src="https://example.com/glitch-image.jpg" alt="Glitch Image" style="width: 50%; max-width: 400px; height: auto; display: block; margin: 30px auto;">
 </body>
 </html>
